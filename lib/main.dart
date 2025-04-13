@@ -32,7 +32,16 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
-            const Center(child: Text("Welcome to the Layout Demo!")),
+            const Text("Welcome to the Layout Demo!"),
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(onPressed: () {}, child: const Text("Call")),
+                ElevatedButton(onPressed: () {}, child: const Text("Route")),
+                ElevatedButton(onPressed: () {}, child: const Text("Share")),
+              ],
+            ),
           ],
         ),
       ),
