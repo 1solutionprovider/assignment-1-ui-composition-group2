@@ -21,7 +21,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Layout Demo")),
-      body: const Center(child: Text("Welcome to the Layout Demo!")),
-    );
+      body: Column(
+  children: [
+    Image.asset('assets/images/banner.jpg'),
+    const SizedBox(height: 10),
+    const Center(child: Text("Welcome to the Layout Demo!")),
+  ],
+),
+    )
   }
 }
