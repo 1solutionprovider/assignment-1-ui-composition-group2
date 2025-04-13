@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Image.asset('assets/images/banner.jpg'), 
+            Image.asset('assets/images/banner.jpg'),
             const SizedBox(height: 10),
             const Text(
               "Flutter Layout Demo",
@@ -41,6 +41,15 @@ class HomeScreen extends StatelessWidget {
                 ElevatedButton(onPressed: () {}, child: const Text("Route")),
                 ElevatedButton(onPressed: () {}, child: const Text("Share")),
               ],
+            ),
+            const SizedBox(height: 20),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                "This is a simple layout demo to showcase Flutter’s layout capabilities. "
+                "It includes an image, title, buttons, and description.",
+                textAlign: TextAlign.center,
+              ),
             ),
           ],
         ),
